@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+h1{
+    font-size: 4rem;
+    margin: 3rem 0px;
+}
+
+#calculator {
+    width: 28%;
+    height: 75vh;
+    background-color: #000000;
+    margin: 4rem auto;
+
+}
+
+
+#screen{
+    width: 100%;
+    height: 35%;
+    background-color:white;
+  
+    border: 2px solid rgb(216, 214, 214);
+    padding: 5rem 0 2rem 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#buttons{
+   width: 100%;
+    height: 65%;
+   margin: 0 auto;
+   font-size: 1.6rem; 
+    
+}
+
+button{
+    font-size: 1.6rem;
+    width: 23.9%;
+    height: 20%;
+    background-color:transparent;
+    color: white;
+    border-style:none;
+ 
+}
+button:hover{
+    background-color: rgb(27, 26, 26);
+  
+    border-radius: 4px;
+}
+button:focus{
+    outline: none;
+}
+
+
+
+/* media query for xx small device */
+@media (max-width:360px){
+    #calculator {
+        width: 100%;
+        height: 78vh;
+    
+    }
+    
+button{
+  
+    width: 23.2%;
+    height: 20%;
+
+}
+
+
+}
+/* meida query for portrait mode */
+
+@media (min-width:361px) and (max-width:455px){
+    #calculator {
+        width: 100%;
+        height: 78vh;
+       
+    }
+
+    
+}
+
+/* media query for extra  small devices */
+
+@media(min-width:456px) and (max-width:576px){
+    #calculator {
+        width: 60%;
+        height: 78vh;
+       
+    }
+    button{
+        width: 23.6%;
+        margin: 0 auto;
+    }
+  
+} 
+
+/* media  query for small devices*/
+@media(min-width:577px) and (max-width:767px){
+    #calculator {
+        width: 60%;
+        height: 78vh;
+    }
+}
+
+
+
+/* media  query for medium devices*/
+@media(min-width:768px) and (max-width:991px){
+    #calculator {
+        width: 45%;
+    height: 78vh;
+    }
+}
+/* media  query for large devices*/
+@media(min-width:992px) and (max-width:1200px){
+    #calculator {
+        width: 32%;    
+    }
+}
+
+
+/* media  query for landscape mode */
+@media (max-height:500px) and (orientation:landscape){
+    h1{
+        display: none;
+    }
+   #calculator{
+       height:100vh !important;
+       margin: 0 auto;
+   }
+}
